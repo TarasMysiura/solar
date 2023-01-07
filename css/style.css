@@ -82,13 +82,39 @@ body {
   align-items: center;
   justify-content: center;
 }
+.nav {
+  position: relative;
+  width: 100%;
+}
 
+.lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 20px;
+
+  /* justify-content: flex-end;  */
+  align-items: flex-start;
+}
+.lang .link {
+  font-weight: var(--font-weight-noto-700);
+  font-size: 18px;
+  line-height: 1.39;
+  color: var(--color-white);
+  /* margin-right: 0; */
+}
+
+.lang .current {
+  color: rgb(113, 233, 104);
+}
 .logo {
   width: 182px;
   height: 51px;
   margin-bottom: 140px;
   fill: var(--color-white);
 }
+
 .pre-title {
   font-weight: var(--font-weight-noto-400);
   font-size: 18px;
@@ -160,8 +186,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  color: var(--color-white);
+  /* fill: var(--color-white); */
 }
+.soc-icon {
+  fill: var(--color-white);
+}
+
 
 .services {
   padding-top: 150px;
@@ -407,15 +437,14 @@ body {
 }
 .application .text {
   font-weight: var(--font-weight-noto-400);
-font-size: 14px;
-line-height: 19px;
-color: var(--color-white);
-
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-white);
 }
 .application .line {
   width: 510px;
   /* height: 0; */
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .contacts {
@@ -434,23 +463,17 @@ color: var(--color-white);
   line-height: 25px;
   color: var(--color-white);
 }
-.footer .btn{
+.footer .btn {
   width: 203px;
   margin-bottom: 0;
 }
 
-.footer-info{
+.footer-info {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 297px;
-
-} 
-.footer .logo{
+}
+.footer .logo {
   margin-bottom: 0;
 }
-.footer .soc-icon{
-  fill: var(--color-white);
-
-}
-
